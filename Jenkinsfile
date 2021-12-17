@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('---clone---') {
             steps {
-                bat "git clone https://github.com/vanCroft/TicTac.git"
+                sh 'git clone https://github.com/vanCroft/TicTac.git'
             }
         }
     }
