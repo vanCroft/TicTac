@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('---make---') {
+        stage('---clone---') {
             steps {
-                bat "mkdir Test"
+                bat "git clone https://github.com/vanCroft/TicTac.git"
             }
         }
     }
