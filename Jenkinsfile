@@ -1,19 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('---clean---') {
+        stage('---make---') {
             steps {
-                sh "mvn clean"
-            }
-        }
-        stage('--test--') {
-            steps {
-                sh "mvn test"
-            }
-        }
-        stage('--package--') {
-            steps {
-                sh "mvn package"
+                bat "mkdir Test"
             }
         }
     }
