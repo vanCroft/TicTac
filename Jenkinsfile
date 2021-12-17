@@ -17,4 +17,6 @@ pipeline {
             }
         }
     }
+    export BUILD_ID=dontKillMe
+  nohup java -jar your_java_app.jar &
 }
